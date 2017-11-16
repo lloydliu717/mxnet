@@ -1,0 +1,57 @@
+----------------------INTRODUCTION----------------------
+Define AI-ML-DL
+
+AI: ALgrithom that solve vague problems 
+ML: A branch of AI, using statistical and mathematical to processing data to achieve something
+DL: A part of ML with more complextiy structure. 
+
+Example:
+AlphaGO: reinforcement learning
+Object recognition: computer vision (Amazon GO, Tesla)
+Voice recognition: Alexa, Siri
+Recommedation system, Click prediction, Machine translation ....
+
+MXNET is a tool.
+One kind of tool: Friendly on production -- hard to write, easy to productionize -- caffe, tensorFlow
+Another kind of tool: Friendly on development -- easy to write, not easy to productionize -- Pytorch, Chainer
+
+MXNET with Gluon package: Combination the advantages of two kinds -- front end: python-like; Back end: high performance
+
+----------------------HANDS ON----------------------
+
+----------------------Set up----------------------
+Need: Python, Jupyter, MXNET
+http://gluon.mxnet.io/
+
+Install python through Conda:
+https://conda.io/miniconda.html -->
+
+wget the link of version you want
+bash downloaded file 
+
+*clone chinese version tutorial(author include configuration in this repository so it is easy to install) otherwise we can directly using pip install mxnet to install the mxnet package
+
+*Pretty good documents here: 
+https://mxnet.incubator.apache.org/gluon/index.html
+http://gluon.mxnet.io/index.html
+
+git clone https://github.com/mli/gluon-tutorials-zh
+cd gluon-tutorials-zh
+conda env create -f environment.yml
+source activate gluon 
+
+Install notedown plug-in
+pip install https://github.com/mli/notedown/tarball/master
+
+Run jupyter notebook
+jupyter notebook --NotebookApp.contents_manager_class='notedown.NotedownContentsManager'
+
+Open new terminal and ssh EC2 with intermediate port
+ssh -i "Liuzichun717.pem" -L8008:localhost:8888 ubuntu@ec2-18-217-11-106.us-east-2.compute.amazonaws.com
+
+Go to browser localhost:8008
+put the token
+
+----------------------Basic----------------------
+
+
